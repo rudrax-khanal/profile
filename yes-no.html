@@ -47,7 +47,7 @@
    <body>
 
    <script>
-
+window.onload = function () {
    var myArray = [
 
   "Yes!",
@@ -55,7 +55,7 @@
   "No!"
 
 ];
-window.onload = function () {
+
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
 document.getElementsById("h1").innerHTML = randomItem;
