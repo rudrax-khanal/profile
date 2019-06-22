@@ -1,0 +1,471 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2019 Aeonsite
+/*	Author: Rudrax
+
+/* 1. Body and general stuff
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*{
+  	-webkit-font-smoothing: antialiased;
+  	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Raleway';
+	letter-spacing: 0.5px;
+}
+.container{
+	max-width:1200px;
+}
+
+/* 2. Header And Navigation Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav_wrapper{
+	padding-top:25px;
+	text-align: center;
+	width:100%;
+	z-index: 99;
+	position: fixed;
+	margin-bottom: 0;
+}
+.nav_menu{
+	padding:5px 0;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nav_wrapper .logo img{
+	padding:14px 16px;
+	padding-bottom:3px;
+	margin: 0;
+	width:30px;
+	height:30px;
+}
+.nav_wrapper .logo h2{
+	font-weight: bold;
+	font-size: 2.5em;
+	line-height: 1.5em;
+	margin: 0px;
+}
+.nav_wrapper .logo h2 a{
+	text-decoration: none;
+}
+.nav_wrapper .menu_wrapper ul,.nav_wrapper .social_wrapper ul{
+	list-style-type: none;
+	overflow: hidden;
+	padding:0;
+	margin: 0;
+}
+.nav_wrapper .menu_wrapper ul li,.nav_wrapper .social_wrapper ul li{
+	float:left;
+}
+.nav_wrapper .menu_wrapper ul li a,.nav_wrapper .social_wrapper ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding:0 16px;
+	padding-top: 16px;
+	font-size:16px;
+}
+.nav_wrapper .menu_wrapper ul li a{
+	font-weight:600;
+}
+.nav_wrapper .menu_wrapper ul li a:hover, .nav_wrapper .social_wrapper ul li a:hover{
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+/*-- Hamburger Menu --*/
+.nav_wrapper .mobile_menu_button, .nav_wrapper .mobile_menu_list{
+	display:none;
+}
+
+.nav_wrapper .mobile_menu_button .navicon{
+   	font-size:1.5em;
+    padding:10px;
+    text-align: right;
+    cursor: pointer;
+}
+.nav_wrapper .mobile_menu_list{
+	margin:0px;
+	padding:20px 10px 10px;
+}
+.nav_wrapper .mobile_menu_list ul{
+  	list-style-type: none;
+  	text-align: left;
+  	margin: 0;
+  	padding: 0;
+  	padding-left:25px;
+}
+.nav_wrapper .mobile_menu_list ul li a{
+  	text-decoration: none;
+  	font-size:18px;
+  	display: block;
+}
+
+/*--  Hero Contents  --*/
+
+/*-- HERO 1 --*/
+.hero_wrapper .hero_content{
+	text-align: center;
+	padding: 200px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero_wrapper .hero_content .user_image img{
+	border-radius: 50%;
+	width:200px;
+}
+.hero_wrapper .user_title{
+	padding-top:20px;
+}
+.hero_wrapper .hero_content h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin:0;
+	padding:0;
+}
+.hero_wrapper .hero_content h3{
+	font-size: 1.8em;
+	margin:0;
+	padding:0;
+}
+/*-- HERO 2 --*/
+.second_hero_content{
+	height:100vh;
+}
+.hero_image{
+	background-image: radial-gradient(transparent, black), url("../images/hero/background.jpg");
+  	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.second_hero_wrapper .second_user_title{
+    padding-top:40vh;
+}
+.second_hero_wrapper .second_user_title h2{
+	font-size: 52px;
+    font-weight:700;
+    text-transform: uppercase;
+    text-align: left;
+}
+.second_hero_wrapper .second_user_title h3{
+	font-size: 42px;
+}
+.second_hero_wrapper .second_user_title .sub_head{
+	font-size: 30px;
+}
+
+/* 3. Middle Contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content_holder{
+	padding:50px 0;
+}
+.content_holder h2{
+	font-size:2em;
+	font-weight:bold;
+}
+.content_holder h3{
+	font-size:1.2em;
+	font-weight:600;
+	font-family:'Open Sans';
+}
+.content_holder p{
+	font-family:'Open Sans';
+}
+
+/* 4. About Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about_me_wrapper p{
+	font-size: 18px;
+}
+.about_me_wrapper .about_image_holder img{
+	width:100%;
+	max-width: 350px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+.about_me_wrapper .about_text_holder .share{
+	font-size: 18px;
+	margin-right:10px;
+}
+.about_me_wrapper .about_text_holder i{
+	margin: 10px;
+}
+
+/* 5. Skills Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.skills_wrapper .text_holder{
+	text-align: center;
+}
+.skills_circle_holder{margin:0 auto;padding:0;max-width:700px;}
+.skills_circle_holder:before,.skills_circle_holder:after {content: " "; display: table;}
+.skills_circle_holder:after {clear: both;}
+.skills_circle_holder {*zoom: 1;}
+
+.skills_circle_holder .c100{
+	margin:25px;
+}
+.skills_circle_holder .c100 span{
+	font-weight:bold;
+}
+.skills_circle .c100 h5{
+	font-weight:bold;
+	text-transform: uppercase;
+	margin-top:125px;
+	text-align: center;
+	font-size: 18px;
+}
+.skills_bars .bar_holder h4{
+	font-size: 1.1em;
+	margin: 0;
+}
+.skills_bars .progress_bar {
+  	margin: 10px 0 13px;
+  	overflow: hidden;
+  	border-radius: 50px;
+  	-moz-border-radius: 50px;
+  	-webkit-border-radius: 50px;
+}
+.skills_bars .progress_bar  span {
+  	display: block;
+  	height: 15px;
+ 	border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+}
+
+/* 7. My Projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my_projects_wrapper ul {
+    list-style: none;
+}
+.my_projects_wrapper li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+}
+.my_projects_wrapper a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+.my_projects_wrapper a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.my_projects_wrapper a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    cursor: pointer;
+}
+.my_projects_wrapper a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.my_projects_wrapper a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+
+/* 9. Contact Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contact_wrapper .contact_social_holder{
+	font-weight: bold;
+	font-size: 18px;
+}
+.contact_wrapper .contact_social_holder a{
+	text-decoration: none;
+}
+.contact_wrapper .contact_social_holder ul{
+	list-style-type: none;
+}
+.contact_wrapper .contact_social_holder i{
+	display: inline-block;
+  	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  	font-weight: normal;
+}
+.contact_wrapper.contact_text_input{
+	border:0px;
+}
+
+/* 10. Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer_wrapper .footer{
+	font-weight: bold;
+}
+
+/* 11. Back to top
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.back_to_top{
+	display: inline-block;
+  	width: 50px;
+  	height: 50px;
+  	text-align: center;
+  	border-radius: 4px;
+  	position: fixed;
+  	bottom: 30px;
+  	right: 30px;
+  	transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  	opacity: 0;
+  	visibility: hidden;
+  	z-index: 1000;
+}
+.back_to_top::before {
+   	content: "";
+   	border:solid #fff;
+   	border-width: 0 3px 3px 0;
+   	display: inline-block;
+   	padding: 3px;
+   	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+  	margin-top:22px;
+}
+.back_to_top:hover {
+   	cursor: pointer;
+}
+.back_to_top.show {
+   	opacity: 1;
+   	visibility: visible;
+}
+
+/* 12. Extra CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.responsive_img{
+	max-width: 100%;
+  	height: auto;
+}
+.center-text{
+	text-align: center;
+}
+/*  Animation  */
+
+/*-- Progress Bars animations --*/
+.animate_bar{
+  animation: progress 3s linear infinite;
+  -moz-animation: progress 3s linear infinite;
+  -webkit-animation: progress 3s linear infinite;
+}
+
+@-webkit-keyframes progress {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 50px;
+	}
+}
+
+@-moz-keyframes progress {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 50px;
+	}
+}
+
+/* 13. Media Queries (For Small Devices)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  Screens Below 1050px  */
+@media screen and (max-width: 1250px){
+	.nav_wrapper .container{
+		width:95%;
+	}
+}
+/*  Screens Below 1050px  */
+@media screen and (max-width: 1050px){
+	/*  Hamburger Menu  */
+	.nav_wrapper .menu_wrapper, .nav_wrapper .social_wrapper{
+		display: none;
+	}
+	.nav_wrapper .mobile_menu_button{
+		display: inline-block;
+	}
+	.nav_wrapper .mobile_menu_button #hamburger_button{
+		display: none;
+		line-height: 2.5em;
+	}
+	.nav_wrapper{
+		padding-top: 10px;
+		padding-bottom: 5px;
+		background-color: #000;
+	}
+  	/* container */
+  	.container{
+  		width:95%;
+  	}
+}
+
+/*  Screens Below 700px  */
+@media screen and (max-width: 800px){
+	.services_wrapper .services_holder, .services_wrapper .services_title{
+		width:90%;
+		text-align: left;
+	}
+	.services_wrapper .services_title h2{
+		text-align: center;
+	}
+	.services_holder .service h3{
+		text-align: left;
+	}
+	.contact_wrapper .contact_social_holder{
+		text-align: left;
+		margin:15px 25px;
+	}
+}
+
+/*  Screens Below 550px  */
+@media screen and (max-width: 550px){
+	.second_hero_wrapper .second_user_title h2, 
+	.second_hero_wrapper .second_user_title h3, 
+	.second_hero_wrapper .second_user_title .sub_head{
+    	text-align: left;
+	}
+	.nav_wrapper .one.column,.nav_wrapper .one.columns{
+		width: 4.66666666667%;
+	}
+	.nav_wrapper .eleven.columns{
+		width: 91.3333333333%;
+	}
+	.about_me_wrapper .about_text_holder {
+		margin-top:20px;
+	}
+	.about_me_wrapper{
+		text-align: center;
+	}
+	.container .container{
+		width:100%;
+	}
+
+}

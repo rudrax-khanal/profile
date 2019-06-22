@@ -1,0 +1,163 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2019 Aeonsite
+/*	Author: Rudrax
+
+
+/* [Table of contents]
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- 1. Main Background
+- 2. Header
+- 3. Navigation Menu
+- 4. Hamburger Menu
+- 5. Content
+- 6. About Me
+- 7. Skills
+- 8. My Projects
+- 9. Contact
+- 10. Back To Top
+- 11. Media Queries (For Small devices)
+*/
+
+/*-- 1. Main Background */
+.main_container{
+	background-color: #0C0B0B;
+	color:#fff;
+}
+/*-- 2.  Header  --*/
+.top_content_wrapper{
+	background: #000;
+	color:#fff;
+}
+
+/*-- 3. Navigation Menu  --*/
+.nav_menu{
+	background-color: #000;
+	border-bottom: 1px solid #333;
+}
+.nav_wrapper .menu_wrapper ul li a:hover, .nav_wrapper .social_wrapper ul li a:hover{
+	color: #ccc;
+}
+.nav_wrapper .logo h2 a{
+	color:#fff;
+}
+.nav_wrapper .menu_wrapper ul li a,.nav_wrapper .social_wrapper ul li a{
+	color:#fff;
+}
+
+/*-- 4. Hamburger Menu  --*/
+.nav_wrapper .mobile_menu_button .navicon{
+    color: #fff;
+}
+.nav_wrapper .mobile_menu_list{
+	background-color: #000;
+}
+.nav_wrapper .mobile_menu_list ul li a{
+  	color:#fff;
+}
+.nav_wrapper .mobile_menu_list{
+	border-top: 1px solid #333;
+}
+
+/*-- 5. Content  --*/
+.content_holder h2{
+	color:#fff;
+}
+.content_holder h3{
+	font-weight:600;
+	color:#fff;
+}
+
+/*-- 6. About Me --*/
+.about_me_wrapper .about_text_holder i{
+	color:#fff;
+}
+
+/*-- 7. Skills  --*/
+
+/*-- CSS CIRCLES / SKILLS  --*/
+.c100{
+	background-color: #333333;
+	color:#fff;
+}
+.c100:after{
+	background-color: #0C0B0B;
+}
+.c100 span{
+	color:#fff;
+}
+
+.c100.white .bar, .c100.white .fill {
+  border-color: #fff !important;
+}
+.c100.white:hover > span {
+  color: #fff;
+}
+
+/*-- SKILL BARS --*/
+.skills_bars .progress_bar {
+  background-color: #333333;
+}
+.skills_bars .progress_bar  span {
+  background-color: #fff;
+}
+
+/*-- 8. My Projects  --*/
+.my_projects_wrapper a:hover, a:focus, a:active {
+    color: #999;
+}
+.my_projects_wrapper a {
+    color: #fff;
+}
+.my_projects_wrapper a::before {
+    background-color: #fff;
+}
+
+.my_projects_wrapper a:active::before {
+    background-color: #fff;
+}
+
+/*-- 9. Contact  --*/
+.contact_wrapper .contact_social_holder a{
+	color:#fff;
+}
+.contact_wrapper .contact_social_holder i{
+  	box-shadow: 0px 0px 2px #888;
+}
+.contact_form_holder input,.contact_form_holder .contact_text_input{
+	background-color: transparent;
+	border-color:#333;
+}
+.contact_form_holder input:focus,.contact_form_holder .contact_text_input:focus{
+	border-color:#fff;
+	border-bottom:3px solid #fff;
+}
+.contact_form_holder .contact_button_input:hover{
+	border-color:#fff;
+	border-bottom:3px solid #fff;
+	color:#fff;
+}
+
+/*-- 10. Back To Top  --*/
+.back_to_top{
+  	background-color: #000;
+  	border-bottom:3px solid #fff;
+}
+.back_to_top:hover {
+   	background-color: #666;
+}
+.back_to_top:active {
+   	background-color: #555;
+}
+
+/*-- 11. Media Queries (For Small Devices)  --*/
+
+/*  Screens Below 1050px  */
+@media screen and (max-width: 1050px){
+	/* Hamburger menu */
+	.nav_wrapper{
+		background-color: #000;
+		border-bottom: 1px solid #333;
+	}
+
+}
