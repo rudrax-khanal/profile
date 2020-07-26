@@ -9,6 +9,29 @@
     jQuery(document).ready(function () {
 
 
+    /*  MIXITUP PORTFOLIO
+     * ----------------------------------------------------------------------------------------
+     */
+
+
+	   $('.gallery').mixitup();
+			
+
+
+
+    /*  Magnific Popup
+     * ----------------------------------------------------------------------------------------
+     */
+
+       	$('.gallery_image').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+
    	/*  Back To Top
      * ----------------------------------------------------------------------------------------
      */
@@ -110,10 +133,5 @@
 
     });
   
-    $(window).resize(function() {
-            if ($(window).width() > 1050) {
-                $('.mobile_menu_list').hide();
-            }
-        });
 
 })(jQuery);

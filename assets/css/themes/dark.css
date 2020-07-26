@@ -102,6 +102,21 @@
   background-color: #fff;
 }
 
+/*-- 8. Portfolio  --*/
+.portfolio_wrapper .gallery_filter a:hover, a:focus, a:active {
+    color: #999;
+}
+.portfolio_wrapper .gallery_filter a {
+    color: #fff;
+}
+.portfolio_wrapper .gallery_filter a::before {
+    background-color: #fff;
+}
+
+.portfolio_wrapper .gallery_filter a:active::before {
+    background-color: #fff;
+}
+
 /*-- 8. My Projects  --*/
 .my_projects_wrapper a:hover, a:focus, a:active {
     color: #999;

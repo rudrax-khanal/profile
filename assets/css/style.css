@@ -243,6 +243,77 @@ body{
   	-webkit-border-radius: 5px;
 }
 
+/* 7. Portfolio Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.portfolio_wrapper .gallery_filter ul {
+    list-style: none;
+}
+.portfolio_wrapper .gallery_filter li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+}
+.portfolio_wrapper .gallery_filter a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+.portfolio_wrapper .gallery_filter a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.portfolio_wrapper .gallery_filter a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    cursor: pointer;
+}
+.portfolio_wrapper .gallery_filter a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.portfolio_wrapper .gallery_filter a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+.portfolio_wrapper .gallery{
+	display: flex;
+	flex-wrap: wrap;
+}
+.portfolio_wrapper .gallery div{
+	height: 500px;
+	overflow: hidden;
+}
+.portfolio_wrapper .gallery > div{
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.portfolio_wrapper .gallery img:hover {
+	opacity: 0.8;
+}
+.portfolio_wrapper .gallery img{
+	width: 350px;
+	max-width: 100%;
+  	height: auto;
+  	position: relative;
+}
+.gallery .mix {
+  	display: none;
+}
+
+
 /* 7. My Projects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .my_projects_wrapper ul {
