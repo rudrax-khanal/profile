@@ -211,6 +211,14 @@ body{
 .skills_circle_holder:after {clear: both;}
 .skills_circle_holder {*zoom: 1;}
 
+.skills_circle_holder{
+	display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
 .skills_circle_holder .c100{
 	margin:25px;
 }
