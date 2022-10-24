@@ -120,7 +120,7 @@
      */ 
 
         var typed = new Typed('.title_words', {
-            strings: ["Web Developer.", "Designer.", "Photographer."],
+            strings: ["Web Developer.", "Web Designer.", "Full Stack Developer."],
             stringsElement: null,
             loop: true,
             loopCount: false,

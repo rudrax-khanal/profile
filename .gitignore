@@ -1,2 +1,4 @@
 _site
 old
+.jekyll-cache
+.git
